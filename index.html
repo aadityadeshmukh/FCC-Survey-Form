@@ -10,17 +10,20 @@
     <h1 id="title">freeCodeCamp Survey Form</h1>
     <p id="description"><em>Thank you for taking the time to help us improve the platform</em></p>
     <form id="survey-form">
-        <label for="name">Name</label>
+        <label for="name" id="name-label">Name</label>
         <input name="name" id="name" type="text" placeholder="Enter your name" required>
-        <label for="email">Email</label>
+        <label for="email" id="email-label">Email</label>
         <input name="email" id="email" type="email" placeholder="Enter your email" required>
-        <label for="number">Age(optional)</label>
-        <input name="number" id="number" type="number" placeholder="Your age">
+        <label for="number" id="number-label">Age(optional)</label>
+        <input name="number" id="number" type="number" placeholder="Your age" min="10" max="100">
         <p>Which option best describes your current role?</p>
-        <select>
-            <option>
-
-            </option>
+        <select id="dropdown">
+            <option selected disabled value>Select current role</option>
+            <option value="student"> Student</option>
+            <option value="fulltimejob">Full time job </option>
+            <option value="learner">Full time learner </option>
+            <option value="preferno"> Prefer not to say</option>
+            <option value="other"> Other</option>
         </select>
     </form>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
